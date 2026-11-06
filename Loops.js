@@ -26,3 +26,19 @@ let num2 = 10;
 for (let i =1; i <=10; i ++){
     console.log(num2 +"*" + i +"=" +num2*i);
 }
+
+let n = 5;
+let fact =1;
+
+for (let i =1; i<=n; i++){
+    fact = fact * i;
+}
+console.log("fact= " + fact);
+
+
+let n3 = 6;
+let fact2 =1;
+ for (let i =1; i<=n3; i++){
+    fact2 = fact2 * i;
+ }
+ console.log("fact2=" + fact2);
