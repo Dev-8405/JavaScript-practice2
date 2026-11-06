@@ -147,3 +147,122 @@ if( age4 < 13){
 }else {
     console.log("you are a senior citizen");
 }
+
+
+let amount= 5000;
+if(amount >=10000){
+    console.log("20% discount");
+} else if(amount >=5000){
+    console.log("10% discount");
+} else if (amount >= 2000){
+    console.log("5% discount");
+}else{
+    console.log("No discount");
+}
+
+             //switch Statement
+
+let day =2;
+
+switch(day){
+    case 1:
+        console.log("Monday");
+        brealk;
+    case 2:
+        console.log("Tuesday"); 
+        break;
+    case 3:
+        console.log("wenedday");
+        break;
+    case 4:
+        console.log("thurasday");
+        break;
+    default: 
+        console.log("invalid day");
+}
+
+
+let p= 20
+let q = 30
+let operator = "*";
+
+switch(operator){
+    case "+":
+        console.log(p+q);
+        break;
+    case "-":
+        console.log(p-q);
+        braek;
+        case "*":
+            console.log(p*q);
+            break;
+        default: 
+           console.log("invaild operator");
+           break;   
+}   
+
+let grade = "a";
+
+switch(grade){
+    case "a":
+        console.log("excellent");
+        break;
+     case "b":
+        console.log("good");
+        break;
+     case "c":
+        console.log("average");
+        break;
+     default:
+        console.log("invalid grade");
+        break;
+}
+
+
+
+    // Ternary Operator
+
+     let  num = 10;
+     let result = (num % 2 ===0) ? "even" : "odd";
+     console.log(result);
+
+     let marks6 = 75;
+     let result2 =(marks6 >=35) ? "pass" :"fail";
+     console.log(result2);
+
+
+//  Nested if Statements 
+
+let marks7= 85;
+
+if (marks >= 35) {
+
+    console.log("Student is Pass");
+
+    if (marks7 >= 75) {
+        console.log("Distinction");
+    } else {
+        console.log("No Distinction");
+    }
+
+} else {
+    console.log("Student is Fail");
+}
+
+
+let c =50;
+let d =30;
+let e = 20;
+
+if (c > d) {
+    console.log("C is  Greatest ");
+    if(c > e) {
+        console.log(" e is  Greatest");
+    } else{
+        if ( d  > e){
+            console.log("d is Greatest");
+        }else{
+            console.log("e is Greatest");
+        }
+    }
+}
