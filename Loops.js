@@ -43,11 +43,31 @@ let fact2 =1;
  }
  console.log("fact2=" + fact2);
 
-       //  while Loop 
+                           //  while Loop 
 
- let i = 1;
+//  let i = 1;
 
-while (i <= 5) {
-    console.log(i);
-    i++;
+// while (i <= 5) {
+//     console.log(i);
+//     i++;
+// }
+
+// let d = 1;
+// while (d <= 10) {
+//     console.log(d);
+//     i++;
+// }
+
+// let i = 10;
+
+// while (i >= 1) {
+//     console.log(i);
+//     i--;
+// }
+
+let i = 2;
+
+while (i <= 20) {
+    console.log(i);      
+    i += 2;
 }
