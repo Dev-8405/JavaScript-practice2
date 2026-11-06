@@ -42,3 +42,12 @@ let fact2 =1;
     fact2 = fact2 * i;
  }
  console.log("fact2=" + fact2);
+
+       //  while Loop 
+
+ let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
