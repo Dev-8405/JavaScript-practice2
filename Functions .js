@@ -65,3 +65,149 @@ console.log("Factorial =", factorial(4));
 console.log("Factorial =", factorial(3));
 
      // Function Expression (Anonymous Function) 
+
+     const divide =function (a , b){
+      return a / b;
+     }
+     console.log(divide(10, 2));
+
+    // Arrow Function (ES6) 
+
+// let greet = () => {
+// console.log("Hello JavaScript");
+// };
+
+// greet();
+
+//   Function Parameters & Arguments 
+
+        //    1. Default Parameters (ES6) 
+
+
+function greet(name="guest"){
+     console.log("hello"+ name);
+  }   
+
+greet("Dev");
+greet();
+
+function student( name , age ="21"){
+    console.log("name", name );
+    console.log("age", age );
+}
+
+student("dev",22);
+student("rahul");
+
+function addition(a = 10, b = 20) {
+    return a + b;
+}
+
+console.log(addition(5, 15));
+console.log(addition());
+console.log(addition(50));
+
+
+      //    Rest Parameters (... Operator) 
+
+ function myNumbers(...numbers) {
+ console.log(numbers);
+}
+
+myNumbers(10, 20, 30, 40, 50);
+
+function add(...numbers) {
+    let sum = 0;
+
+    for (let num of numbers) {
+        sum = sum + num;
+    }
+
+    console.log("Addition =", sum);
+}
+
+add(10, 20, 30);
+add(5, 10, 15, 20);
+
+
+
+//    Function Scope & Closures 
+
+// Function Scope 
+
+
+function showmessage() {
+    let message = "hello!";
+    console.log(message);
+}
+
+showmessage();
+
+function calculate() {
+    let a = 10;
+    let b = 20;
+
+    let sum = a + b;
+
+    console.log("Sum =", sum);
+}
+
+calculate();
+
+
+// Closures (Functions Inside Functions)
+
+// function outerFunction() {
+//     let name = "Dev";
+
+//     function innerFunction() {
+//         console.log(name);
+//     }
+
+//     return innerFunction;
+// }
+
+// let result = outerFunction();
+
+// result();
+
+function counter() {
+    let count = 0;
+
+    return function() {
+        count++;
+        console.log(count);
+    };
+}
+
+let result = counter();
+
+result();
+result();
+result();
+
+    //   Callback Functions 
+
+function processUserInput(name, callback) {
+console.log(`Processing user: ${name}`);
+callback();
+}
+
+function displayMessage() {
+    console.log("User processed successfully!");
+}
+
+processUserInput("John", displayMessage);
+
+
+  // Higher-Order Functions 
+
+function multiplyBy(factor) {
+    return function (num) {
+        return num * factor;
+    };
+}
+
+const double = multiplyBy(2);
+
+console.log(double(5));
